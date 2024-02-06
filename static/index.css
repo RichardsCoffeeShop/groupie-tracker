@@ -1,0 +1,144 @@
+body {
+    background-color: #191717;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+form{
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto
+}
+
+form input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 0 10px;
+    background-color: transparent;
+    color: #fff;
+}
+
+form input:focus {
+    outline: none;
+    border-color: orange;
+}
+
+ul {
+    list-style: none;
+}
+
+.list {
+    width: 100%;
+    max-width: 400px;
+    max-height: 200px; 
+    overflow-y: auto; 
+    border-radius: 0 0 5px 5px;
+
+}
+
+.list-items {
+    padding: 10px 5px;
+}
+
+.list-items:hover {
+    background-color: #2c2828;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.container{
+    width: 90%;
+    height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sitetitle{
+    text-align: center;
+    font-size: 4rem;
+    color: whitesmoke;
+}
+
+.sitebelow{
+    text-align: center;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    margin-bottom: 30px;
+}
+
+.search-result{
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-gap: 25px;
+    grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.item {
+    width:  100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    background-color: #2c2828;
+    padding: 15px;
+    position: relative;
+    opacity: 0;
+}
+
+.item img{
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    object-fit: contain
+}
+
+.item .flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item .title {
+    color: whitesmoke;
+    font-size: 2rem;
+}
+
+.item .info {
+    color: whitesmoke;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.item .url:hover {
+    color: orange
+}
